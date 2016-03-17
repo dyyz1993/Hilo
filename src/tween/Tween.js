@@ -10,7 +10,7 @@
  * <br/>
  * 使用示例:
  * <pre>
- * ticker.addTick(Hilo.Tween);//需要把Tween加到ticker里才能使用
+ * ticker.addTick(Hilo.Tween);//need to add Tween to use in ticker  
  *
  * var view = new View({x:5, y:10});
  * Hilo.Tween.to(view, {
@@ -26,26 +26,26 @@
  *     }
  * });
  * </pre>
- * @class Tween类提供缓动功能。
- * @param {Object} target 缓动对象。
- * @param {Object} fromProps 对象缓动的起始属性集合。
- * @param {Object} toProps 对象缓动的目标属性集合。
- * @param {Object} params 缓动参数。可包含Tween类所有可写属性。
+ * @class The Tween classes provide ease。
+ * @param {Object} target Tween object。
+ * @param {Object} fromProps The object of tween begen attribute set.
+ * @param {Object} toProps The object of tween target attribute set .
+ * @param {Object} params tween params,All writable attribute can contain Tween class.
  * @module hilo/tween/Tween
  * @requires hilo/core/Class
- * @property {Object} target 缓动目标。只读属性。
- * @property {Int} duration 缓动总时长。单位毫秒。
- * @property {Int} delay 缓动延迟时间。单位毫秒。
- * @property {Boolean} paused 缓动是否暂停。默认为false。
- * @property {Boolean} loop 缓动是否循环。默认为false。
- * @property {Boolean} reverse 缓动是否反转播放。默认为false。
- * @property {Int} repeat 缓动重复的次数。默认为0。
- * @property {Int} repeatDelay 缓动重复的延迟时长。单位为毫秒。
- * @property {Function} ease 缓动变化函数。默认为null。
- * @property {Int} time 缓动已进行的时长。单位毫秒。只读属性。
- * @property {Function} onStart 缓动开始回调函数。它接受1个参数：tween。默认值为null。
- * @property {Function} onUpdate 缓动更新回调函数。它接受2个参数：ratio和tween。默认值为null。
- * @property {Function} onComplete 缓动结束回调函数。它接受1个参数：tween。默认值为null。
+ * @property {Object} target tween target ,read-only property
+ * @property {Int} duration tween total time ,milliseconds.
+ * @property {Int} delay delay time,milliseconds.
+ * @property {Boolean} paused Whether to paused ,default false.
+ * @property {Boolean} loop Whether to loop,default false.
+ * @property {Boolean} reverse Whether to reverse,default false.
+ * @property {Int} repeat repeat the number ,default 0.
+ * @property {Int} repeatDelay Repeat the delay time ,milliseconds.
+ * @property {Function} ease ease change function ,default null。
+ * @property {Int} time the length of the time,milliseconds,read-only property.
+ * @property {Function} onStart  start callback function ,only one parameter:tween,default null.   
+ * @property {Function} onUpdate update callback function,two parameters：ratio and tween,default null。
+ * @property {Function} onComplete complete callback function,only one parameter:tween,default null.
  */
 /**
  * @language=zh
